@@ -425,7 +425,7 @@ section {
   height: 60px;
   display: block;
   background: none;
-  border-radius: 0;
+  border-radius: 0px;
 }
 .skills .progress .skill {
   padding: 10px 0;
@@ -515,8 +515,7 @@ section {
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
-  border-radius: 50px;
+  border-radius: 20px;
   padding: 2px 15px;
 }
 .portfolio #portfolio-flters li {
@@ -527,7 +526,7 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: #575757;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -541,17 +540,19 @@ section {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
+  border-radius: 20px;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
+  background: rgba(255, 255, 255, 0.8);
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   left: 30px;
   right: 30px;
   top: 30px;
   bottom: 30px;
+  border-radius: 20px;
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
@@ -563,6 +564,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
+  border-radius: 20px;
   text-align: center;
   z-index: 3;
   transition: all ease-in-out 0.3s;
@@ -579,8 +581,8 @@ section {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid #d7dce1;
-  border-left: 3px solid #d7dce1;
+  border-top: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -592,18 +594,18 @@ section {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid #d7dce1;
-  border-right: 3px solid #d7dce1;
+  border-bottom: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #45505b;
+  color: #ffffff;
   font-weight: 600;
 }
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
+  color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -614,7 +616,7 @@ section {
   z-index: 4;
 }
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #45505b;
+  color: #ffffff;
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
@@ -1024,13 +1026,11 @@ section {
 }
 #footer h5 {
   font-size: 15px;
-  font-style: italic;
   padding: 0;
   margin: 10px 0;
 }
 #footer h6 {
   font-size: 10px;
-  font-style: italic;
   padding: 0;
   margin: 10px 0;
 }
