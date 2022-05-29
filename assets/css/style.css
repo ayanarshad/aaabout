@@ -477,7 +477,8 @@ section {
 }
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #f7f8f9;
+  background: #b6b6b6;
+  border-radius: 20px;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -1016,7 +1017,7 @@ section {
   margin: 0 0 5px 0;
 }
 #footer h4 {
-  font-size: 30px;
+  font-size: 20px;
   padding: 0;
   margin: 10px 0;
   font-family: "Poppins", sans-serif;
