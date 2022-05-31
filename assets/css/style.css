@@ -55,7 +55,52 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-/
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #0563bb;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -557,13 +602,13 @@ section {
   z-index: 9994;
 }
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 15px;
+  font-size: 20px;
   color: #ffffff;
   font-weight: 600;
 }
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #ffffff;
-  font-size: 10px;
+  font-size: 14px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -605,7 +650,7 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
@@ -627,16 +672,14 @@ section {
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(70, 80, 90, 0.50);
-    border-radius: 20px;
+  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
 }
 .portfolio-details .portfolio-info h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
-  text-align: center
 }
 .portfolio-details .portfolio-info ul {
   list-style: none;
@@ -650,10 +693,9 @@ section {
   padding-top: 30px;
 }
 .portfolio-details .portfolio-description h2 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
-text-align: center
 }
 .portfolio-details .portfolio-description p {
   padding: 0;
@@ -864,7 +906,7 @@ text-align: center
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
-  font-size: 15px;
+  font-size: 14px;
   color: #728394;
 }
 .contact .info .email, .contact .info .phone {
@@ -1020,5 +1062,5 @@ text-align: center
   margin: 0 0 5px 0;
 }
 #footer .credits {
-  font-size: 12px;
+  font-size: 13px;
 }
