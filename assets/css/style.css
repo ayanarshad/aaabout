@@ -602,13 +602,13 @@ section {
   z-index: 9994;
 }
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+  font-size: 15px;
   color: #ffffff;
   font-weight: 600;
 }
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 10px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -650,11 +650,11 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
@@ -672,10 +672,12 @@ section {
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
+  border-radius:20px;
+  box-shadow: 0px 0 30px rgba(70, 70, 90, 0.50);
 }
 .portfolio-details .portfolio-info h3 {
-  font-size: 22px;
+  font-size: 20px;
+  text-align: center;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -693,7 +695,8 @@ section {
   padding-top: 30px;
 }
 .portfolio-details .portfolio-description h2 {
-  font-size: 26px;
+  font-size: 25px;
+  text-align: center;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -1005,12 +1008,12 @@ section {
 #footer {
   background: #f7f8f9;
   color: #45505b;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   padding: 30px 0;
 }
 #footer h3 {
-  font-size: 36px;
+  font-size: 35px;
   font-weight: 700;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -1023,7 +1026,7 @@ section {
   margin: 10px 0;
   font-family: "Poppins", sans-serif;
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
 
 }
 #footer h5 {
@@ -1037,7 +1040,7 @@ section {
   margin: 10px 0;
 }
 #footer .social-links {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 #footer .social-links a {
   font-size: 18px;
@@ -1045,7 +1048,7 @@ section {
   background: #0563bb;
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
+  padding: 9px 0;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
