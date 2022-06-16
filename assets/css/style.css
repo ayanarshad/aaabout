@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   background: #f2f3f5;
   height: 56px;
-  width: 100%;
+  width: 50%;
   overflow: hidden;
   transition: 0.3s;
 }
@@ -311,7 +311,6 @@ section {
   padding: 60px 0;
   overflow: hidden;
 }
-
 .section-title {
   text-align: center;
   padding-bottom: 30px;
@@ -344,6 +343,18 @@ section {
   background: #0563bb;
   bottom: 0;
   left: calc(50% - 20px);
+}
+.section-title span {
+  position: absolute;
+  top: 0px;
+  color: #e9e9e9;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 0;
 }
 .section-title p {
   margin-bottom: 0;
@@ -701,8 +712,32 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
 }
+.portfolio-details .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  background: #ffffff;
+  color: #0678e3;
+  line-height: 1;
+  padding: 9px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+#footer .social-links a:hover {
+  background: #0678e3;
+  color: #fff;
+  text-decoration: none;
+}
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+.desicredits {
+    font-size: 15px;
+    text-align: center;
+    padding: 30px;
 }
 
 /*--------------------------------------------------------------
