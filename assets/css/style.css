@@ -10,7 +10,20 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
-
+.no-highlight {
+  user-select: none;
+    user-zoom: none;
+    text-decoration: none;
+   -webkit-user-drag: none;
+	 -ms-user-select: none;
+	 -moz-user-select: none;
+   -moz-user-drag:none;
+	 -webkit-touch-callout: none;
+	 -webkit-user-select: none;
+   -ms-user-drag: none;
+   -moz-user-drag: none;
+   -webkit-user-drag: none;
+}
 a {
   color: #0563bb;
   text-decoration: none;
@@ -560,7 +573,7 @@ section {
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.555);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -654,6 +667,288 @@ section {
   left: 15px;
 }
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+/*--------------------------------------------------------------
+# Video
+--------------------------------------------------------------*/
+.Video .Video-item {
+  margin-bottom: 30px;
+}
+.Video #Video-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 20px;
+  padding: 2px 15px;
+}
+.Video #Video-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #575757;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.Video #Video-flters li:hover, .Video #Video-flters li.filter-active {
+  color: #0563bb;
+}
+.Video #Video-flters li:last-child {
+  margin-right: 0;
+}
+.Video .Video-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0 30px rgba(80, 80, 80, 30);
+}
+.Video .Video-wrap::before {
+  content: "";
+  background: linear-gradient(-40deg, rgba(36, 0, 0, 0) 0%, rgba(88, 210, 189, 0.521) 30%, rgba(88,210,189.767) 100%);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+.Video .Video-wrap .Video-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Video .Video-wrap .Video-info::before {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-top: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+.Video .Video-wrap .Video-info::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+.Video .Video-wrap .Video-info h4 {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.Video .Video-wrap .Video-info p {
+  color: #ffffff;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+.Video .Video-wrap .Video-links {
+  text-align: center;
+  z-index: 4;
+}
+.Video .Video-wrap .Video-links a {
+  color: #ffffff;
+  margin: 0 2px;
+  font-size: 25px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.Video .Video-wrap .Video-links a:hover {
+  color: #ff0000;
+}
+.Video .Video-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+.Video .Video-wrap:hover .Video-info {
+  opacity: 1;
+}
+.Video .Video-wrap:hover .Video-info::before {
+  top: 15px;
+  left: 15px;
+}
+.Video .Video-wrap:hover .Video-info::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+/*--------------------------------------------------------------
+# Game Video
+--------------------------------------------------------------*/
+.Video .game-Video-item {
+  margin-bottom: 30px;
+}
+.Video #game-Video-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 20px;
+  padding: 2px 15px;
+}
+.Video #game-Video-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #575757;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.Video #game-Video-flters li:hover, .Video #game-Video-flters li.filter-active {
+  color: #0563bb;
+}
+.Video #game-Video-flters li:last-child {
+  margin-right: 0;
+}
+  .Video .game-Video-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0 30px rgba(80, 80, 80, 30);
+  }
+  .Video .game-Video-wrap::before {
+    content: "";
+    background: linear-gradient(-40deg, rgba(0, 0, 0, 0) 0%, rgba(51, 1, 92, 0.671) 25%, rgba(63, 0, 122, 0.855) 50%);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
+.Video .game-Video-wrap .game-Video-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Video .game-Video-wrap .game-Video-info::before {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-top: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+.Video .game-Video-wrap .game-Video-info::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+.Video .game-Video-wrap .game-Video-info h4 {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.Video .game-Video-wrap .game-Video-info p {
+  color: #ffffff;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+.Video .game-Video-wrap .game-Video-links {
+  text-align: center;
+  z-index: 4;
+}
+.Video .game-Video-wrap .game-Video-links a {
+  color: #ffffff;
+  margin: 0 2px;
+  font-size: 25px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.Video .game-Video-wrap .game-Video-links a:hover {
+  color: #ff0000;
+}
+.Video .game-Video-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+.Video .game-Video-wrap:hover .game-Video-info {
+  opacity: 1;
+}
+.Video .game-Video-wrap:hover .game-Video-info::before {
+  top: 15px;
+  left: 15px;
+}
+.Video .game-Video-wrap:hover .game-Video-info::after {
   bottom: 15px;
   right: 15px;
 }
