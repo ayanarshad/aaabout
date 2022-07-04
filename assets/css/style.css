@@ -1,9 +1,13 @@
 <!-- =======================================================
-  * Site Name: (AA)-About Site
-  * Author: (AA)
-  * Copyrights � (AA)-Design. All rights reserved.
+  * Site Name: (AA)-About
+  * Author: (AA)- Muhammad Ayan - Father Name: Muhammad Arshad.
+  * Site Url: http://ayanarshad.github.io/aaabout
+  * gmail: ayanarshad113@gmail.com
+  * blog Site: ayanarshad.blogspot.com
+  * Total Social Links: https://linktr.ee/ayanarshad
+  * Copyrights © (AA)-Design. All rights reserved.
+  ======================================================== -->
 
-/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
@@ -49,13 +53,13 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 15px;
   z-index: 996;
   background: #0563bb;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50px;
   transition: all 0.4s;
 }
 .back-to-top i {
-  font-size: 28px;
+  font-size: 25px;
   color: #fff;
   line-height: 0;
 }
@@ -79,40 +83,18 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: rgb(255, 255, 255);
 }
 
 #preloader:before {
   content: "";
   position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #0563bb;
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  top: calc(50% - 65px);
+  left: calc(50% - 65px);
+  width: 130px;
+  height: 130px;
+  background: url("../img/loader.gif") top right no-repeat;
+  background-size: cover;
 }
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -175,8 +157,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
-  font-size: 15px;
-  border-radius: 50px;
+  font-size: 13px;
+  border-radius: 40px;
   background: #f2f3f5;
   height: 56px;
   width: 50%;
@@ -224,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9998;
   border: 0;
   background: none;
-  font-size: 28px;
+  font-size: 20px;
   transition: all 0.4s;
   outline: none !important;
   line-height: 0;
@@ -248,72 +230,72 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# home Section
 --------------------------------------------------------------*/
-#hero {
+#home {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right no-repeat;
+  background: url("../img/home-bg.gif") top right no-repeat;
   background-size: cover;
   position: relative;
 }
 @media (min-width: 992px) {
-  #hero {
-    padding-left: 160px;
+  #home {
+    padding-left: 180px;
   }
 }
-#hero:before {
+#home:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.185);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
 }
-#hero h1 {
+#home h1 {
   margin: 0;
-  font-size: 70px;
+  font-size: 90px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 60px;
   color: #45505b;
 }
-#hero p {
+#home p {
   color: #45505b;
-  margin: 15px 0 0 0;
-  font-size: 26px;
+  margin: 25px 0 0 0;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
-#hero p span {
+#home p span {
   color: #0563bb;
   letter-spacing: 1px;
 }
-#hero .social-links {
-  margin-top: 30px;
+#home .social-links {
+  margin-top: 20px;
 }
-#hero .social-links a {
-  font-size: 24px;
+#home .social-links a {
+  font-size: 20px;
   display: inline-block;
   color: #45505b;
   line-height: 1;
-  margin-right: 20px;
+  margin-right:13px;
   transition: 0.3s;
 }
-#hero .social-links a:hover {
+#home .social-links a:hover {
   color: #0563bb;
 }
 @media (max-width: 992px) {
-  #hero {
+  #home {
     text-align: center;
   }
-  #hero h1 {
-    font-size: 32px;
-    line-height: 36px;
+  #home h1 {
+    font-size: 70px;
+    line-height: 45px;
   }
-  #hero p {
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 24px;
+  #home p {
+    margin-top: 13px;
+    font-size: 15px;
+    line-height: 25px;
   }
 }
 
@@ -329,13 +311,14 @@ section {
   padding-bottom: 30px;
 }
 .section-title h2 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
   color: #45505b;
+  text-shadow: -1px -1px 30px rgba(152, 150, 150, 1);
 }
 .section-title h2::before {
   content: "";
@@ -365,7 +348,7 @@ section {
   right: 0;
   z-index: 0;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 50px;
   text-transform: uppercase;
   line-height: 0;
 }
@@ -378,7 +361,7 @@ section {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 20px;
   color: #728394;
 }
 .about .content ul {
@@ -394,7 +377,7 @@ section {
   margin-right: 10px;
 }
 .about .content ul i {
-  font-size: 16px;
+  font-size: 10px;
   margin-right: 5px;
   color: #0563bb;
   line-height: 0;
@@ -446,7 +429,7 @@ section {
 # Akills
 --------------------------------------------------------------*/
 .skills .progress {
-  height: 60px;
+  height: 50px;
   display: block;
   background: none;
   border-radius: 0px;
@@ -456,7 +439,7 @@ section {
   margin: 0;
   text-transform: uppercase;
   display: block;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
   color: #45505b;
 }
@@ -465,13 +448,14 @@ section {
   font-style: normal;
 }
 .skills .progress-bar-wrap {
-  background: #f2f3f5;
+  background: #e6e6e6;
+  border-radius: 10px;
 }
 .skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #0563bb;
+  background: linear-gradient(90deg, rgba(255, 238, 238, 0) 10%, rgb(6, 134, 255) 100%);
   border-radius: 10px;
 }
 
@@ -479,7 +463,7 @@ section {
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -492,8 +476,8 @@ section {
   position: relative;
 }
 .resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
+  line-height: 15px;
+  font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
@@ -501,12 +485,12 @@ section {
   margin-bottom: 10px;
 }
 .resume .resume-item h5 {
-  font-size: 16px;
-  background: #b6b6b6;
+  font-size: 15px;
+  background: linear-gradient(120deg, rgba(5, 109, 207, 0.616) 0%, rgba(0, 0, 0, 0.041) 90%);
   border-radius: 20px;
   padding: 5px 15px;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 .resume .resume-item ul {
@@ -548,8 +532,8 @@ section {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
   color: #575757;
@@ -569,7 +553,9 @@ section {
   border-radius: 10px;
   z-index: 1;
   background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 0 30px rgba(80, 80, 80, 30);
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 0px 25px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 0px 25px 0px rgba(50, 50, 50, 0.5);
 }
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -629,7 +615,7 @@ section {
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 15px;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
 }
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #ffffff;
@@ -645,7 +631,7 @@ section {
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #ffffff;
   margin: 0 2px;
-  font-size: 28px;
+  font-size: 25px;
   display: inline-block;
   transition: 0.3s;
 }
@@ -689,8 +675,8 @@ section {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
   color: #575757;
@@ -710,7 +696,9 @@ section {
   border-radius: 10px;
   z-index: 1;
   background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 0 30px rgba(80, 80, 80, 30);
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 0px 25px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 0px 25px 0px rgba(50, 50, 50, 0.5);
 }
 .Video .Video-wrap::before {
   content: "";
@@ -830,8 +818,8 @@ section {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
   color: #575757;
@@ -851,7 +839,9 @@ section {
     border-radius: 10px;
     z-index: 1;
     background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 0 30px rgba(80, 80, 80, 30);
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 0px 25px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 25px 0px rgba(50, 50, 50, 0.5);
   }
   .Video .game-Video-wrap::before {
     content: "";
@@ -911,7 +901,7 @@ section {
 .Video .game-Video-wrap .game-Video-info h4 {
   font-size: 15px;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
 }
 .Video .game-Video-wrap .game-Video-info p {
   color: #ffffff;
@@ -988,7 +978,7 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #eee;
 }
 .portfolio-details .portfolio-info ul {
   list-style: none;
@@ -999,14 +989,19 @@ section {
   margin-top: 10px;
 }
 .portfolio-details .portfolio-description {
-  padding-top: 30px;
+  padding-top: 25px;
 }
 .portfolio-details .portfolio-description h2 {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   font-weight: 700;
   margin-bottom: 20px;
 }
+.portfolio-details .portfolio-description p{
+  font-size: 12px;
+  text-align: center;
+}
+
 .portfolio-details .social-links a {
   font-size: 20px;
   display: inline-block;
@@ -1014,7 +1009,7 @@ section {
   color: #0678e3;
   line-height: 1;
   padding: 9px 0;
-  margin-right: 4px;
+  margin-right: 2px;
   border-radius: 50%;
   text-align: center;
   width: 36px;
@@ -1232,7 +1227,7 @@ section {
 }
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
   color: #45505b;

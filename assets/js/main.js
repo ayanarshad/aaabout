@@ -1,8 +1,11 @@
 /**
-* Template Name: MyResume - v4.7.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+  * Site Name: (AA)-About
+  * Author: (AA)- Muhammad Ayan - Father Name: Muhammad Arshad.
+  * Site Url: http://ayanarshad.github.io/aaabout
+  * gmail: ayanarshad113@gmail.com
+  * blog Site: ayanarshad.blogspot.com
+  * Total Social Links: https://linktr.ee/ayanarshad
+  * Copyrights © (AA)-Design. All rights reserved.
 */
 (function() {
   "use strict";
@@ -136,7 +139,7 @@
   }
 
   /**
-   * Hero type effect
+   * Home type effect
    */
   const typed = select('.typed')
   if (typed) {
