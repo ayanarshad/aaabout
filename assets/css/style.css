@@ -1,10 +1,20 @@
-< !--=======================================================* Site Name: (AA)-About * Author: (AA)- Muhammad Ayan - Father Name: Muhammad Arshad. * Site Url: http: //ayanarshad.github.io/aaabout
-* gmail: ayanarshad113@gmail.com * blog Site: ayanarshad.blogspot.com * Total Social Links: https: //linktr.ee/ayanarshad
-
-* Copyrights © (AA)-Design. All rights reserved.========================================================--># General --------------------------------------------------------------*/ body {
+/*=======================================================*
+Site Name: (AA)-About *
+Author: (AA)- Muhammad Ayan - Father Name: Muhammad Arshad. *
+Site Url: http: //ayanarshad.github.io/aaabout *
+gmail: ayanarshad113@gmail.com *
+blog Site: ayanarshad.blogspot.com *
+Total Social Links: https: //linktr.ee/ayanarshad *
+Copyrights © (AA)-Design. All rights reserved.
+========================================================-->
+# General --------------------------------------------------------------*/ 
+/*-------No Use-----------------------
+body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
+*/
+
 
 .no-highlight {
   user-select: none;
@@ -187,11 +197,11 @@ h6 {
   color: #45505b;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 980px) {
 
   .nav-menu a,
   .nav-menu a:focus {
-    width: 56px;
+    width: 60px;
   }
 
   .nav-menu a span,
