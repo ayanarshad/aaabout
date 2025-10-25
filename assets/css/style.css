@@ -630,9 +630,11 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
 .about .section-title home{
   font-size: 25px;
   width: 600;
+  padding-top: 900px;
 }
 .about .section-title home kbd{
   border-radius: 30px;
